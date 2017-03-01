@@ -1,0 +1,18 @@
+group 'com.example'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('ch.qos.logback:logback-classic:1.1.7')
+    compile('org.assertj:assertj-core:3.6.1')
+    compile('info.novatec.testit:livingdoc-cli:1.2.3')
+    compile('org.javassist:javassist:3.21.0-GA')
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
